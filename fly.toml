@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "skybridge"
+app = "skybridge-hdxfrg"
 primary_region = "lhr"
 
 [http_service]
@@ -14,9 +14,13 @@ primary_region = "lhr"
   min_machines_running = 0
 
 [env]
-  SKYBRIDGE_BASEURL = "skybridge.fly.dev"
-  SKYBRIDGE_SHOW_INDEX = true
-  FLY_SWAP = true
+  SKYBRIDGE_BASEURL = 'skybridge-hdxfrg.fly.dev' #you need to rename it using your app name .fly.dev
+  SKYBRIDGE_SHOW_INDEX = 'true'
+  FLY_SWAP = 'true'
+  SKYBRIDGE_SECRET='246810' #you need to fill it, I taped random numbers and it worked
+  SKYBRIDGE_REQUIRE_AUTH_PASSWORD = true
+  SKYBRIDGE_AUTH_PASSWORD = '' #if above is true, it will be asked when you'll try to log in to you bsky account in the app
+  SKYBRIDGE_ALLOW_BACKFILL = true
 
 [mounts]
   source="skybridge_data"
