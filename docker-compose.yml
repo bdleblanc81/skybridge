@@ -8,7 +8,7 @@ services:
       - skybridge:/app/database
     environment:
       # Base URL of where SkyBridge will be hosted without the protocol.
-      - SKYBRIDGE_BASEURL=your.domain.com
+      - SKYBRIDGE_BASEURL=skybridge-hdxfrg.fly.dev
       # Random secret, generate with `openssl rand -base64 32`.
       - SKYBRIDGE_SECRET
       # Password used to make a SkyBridge instance private.
