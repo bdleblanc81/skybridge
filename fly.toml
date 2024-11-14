@@ -4,7 +4,7 @@
 #
 
 app = 'skybridge-hdxfrg'  #you need to rename it
-primary_region = 'lhr'
+primary_region = 'ewr'
 
 [build]
 image = "videah/skybridge:latest"
