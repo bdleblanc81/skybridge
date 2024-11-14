@@ -30,11 +30,11 @@ image = "videah/skybridge:latest"
   destination = '/app/database'
 
 [[http_service.checks]]
-  grace_period = "30s"
-  interval = "30s"
-  method = "GET"
-  timeout = "5s"
-  path = "/api/v2/instance"
+#  grace_period = "30s"
+#  interval = "30s"
+#  method = "GET"
+#  timeout = "5s"
+#  path = "/api/v2/instance"
 
 [http_service.concurrency]
   type = "requests"
