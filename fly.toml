@@ -22,7 +22,7 @@ image = "videah/skybridge:latest"
   FLY_SWAP = 'true'
   SKYBRIDGE_SECRET='246810' #you need to fill it, I taped random numbers and it worked
   SKYBRIDGE_REQUIRE_AUTH_PASSWORD = true
-  SKYBRIDGE_AUTH_PASSWORD = '' #if above is true, it will be asked when you'll try to log in to you bsky account in the app
+  SKYBRIDGE_AUTH_PASSWORD = '246810' #if above is true, it will be asked when you'll try to log in to you bsky account in the app
   SKYBRIDGE_ALLOW_BACKFILL = true
 
 [[mounts]]
