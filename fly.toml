@@ -32,6 +32,6 @@ image = "videah/skybridge:latest"
   destination = '/app/database'
 
 [[vm]]
-  memory = '256mb'
+  memory = '1gb'
   cpu_kind = 'shared'
-  cpus = 1
+  cpus = 4
